@@ -1,0 +1,67 @@
+name: OOE
+suffix: ~  # add suffix to saved images
+model: srgan
+distortion: sr
+scale: 4
+gpu_ids: [ 0 ]
+
+#### network structures
+network_G:
+  which_model_G: RRDBNet
+  in_nc: 4
+  out_nc: 3
+  nf: 64
+  nb: 23
+  upscale: 4
+
+network_C:
+  which_model_C: UNet
+  in_nc: 1475
+  out_nc: 1
+  nf: 64
+  nb: 16
+
+datasets:
+  test:
+    name: set5
+    mode: LQ
+    dataroot_LQ: ../../dataset/set5/X4
+  test2:
+    name: set14
+    mode: LQ
+    dataroot_LQ: ../../dataset/set14/X4
+  test3:
+    name: bsd100
+    mode: LQ
+    dataroot_LQ: ../../dataset/bsd100/X4
+  test4:
+    name: city100_iPhoneX
+    mode: LQ
+    dataroot_LQ: ../../dataset/city100_iPhoneX/X4
+  test5:
+    name: city100_NikonD5500
+    mode: LQ
+    dataroot_LQ: ../../dataset/city100_NikonD5500/X4
+  test6:
+    name: general100
+    mode: LQ
+    dataroot_LQ: ../../dataset/general100/X4
+  test7:
+    name: manga109
+    mode: LQ
+    dataroot_LQ: ../../dataset/manga109/X4
+  test8:
+    name: urban100
+    mode: LQ
+    dataroot_LQ: ../../dataset/urban100/X4
+  test9:
+    name: DIV2K
+    mode: LQ
+    dataroot_LQ: ../../dataset/DIV2K/LR/4X/val
+
+path:
+  pretrain_model_G: ../pretrained/SR.pth
+#  pretrain_model_C: ../pretrained/HWNet2_DCT/0.01_20/400000_C.pth
+  pretrain_model_C: ../pretrained/HWNet3_DCT/0.01/400000_C.pth
+#  pretrain_model_C: ../pretrained/OOE.pth
+
