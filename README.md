@@ -16,10 +16,9 @@ python test.py -opt options/test/test.yml
 
 ## Train
 
-Please refer to: [SROOE](https://github.com/seungho-snu/SROOE)
+The code is built on [SROOE](https://github.com/seungho-snu/SROOE). We thank the authors for sharing the codes.
 
-
-
+<br />
 **If you want to modify the HWNet and Loss:**
 
 ```
