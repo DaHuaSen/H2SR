@@ -16,10 +16,10 @@ python test.py -opt options/test/test.yml
 
 ## Train
 
-The code is built on [SROOE](https://github.com/seungho-snu/SROOE). We thank the authors for sharing the codes.
+The code is built on [SROOE](https://github.com/seungho-snu/SROOE) and [SROT](https://github.com/seungho-snu/SROT). We thank the authors for sharing the codes.
 
-<br />
-If you want to modify the HWNet and Loss:
+
+<br>**If you want to modify the HWNet and Loss:**
 
 ```
 ./codes/models/modules/CondNet_arch.py --> HWNet
