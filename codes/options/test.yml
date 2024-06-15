@@ -60,8 +60,4 @@ datasets:
     dataroot_LQ: ../../dataset/DIV2K/LR/4X/val
 
 path:
-  pretrain_model_G: ../pretrained/SR.pth
-#  pretrain_model_C: ../pretrained/HWNet2_DCT/0.01_20/400000_C.pth
-  pretrain_model_C: ../pretrained/HWNet3_DCT/0.01/400000_C.pth
-#  pretrain_model_C: ../pretrained/OOE.pth
-
+pretrain_model_C: ../pretrained/HWNet2_DCT.pth
