@@ -1,5 +1,5 @@
 #### general settings
-name: T
+name: ~
 use_tb_logger: false
 model: srgan
 distortion: sr
@@ -13,8 +13,7 @@ datasets:
     mode: LQGT
     dataroot_GT: ../../dataset/DF2K/HR/train
     dataroot_LQ: ../../dataset/DF2K/4X/train
-    dataroot_T_OOS_map: ../../dataset/DF2K/Local_LPIPS_min_dn
-#    dataroot_T_OOS_map: ../../SROT/LPIPS-Map-Gen/T_OOS_Map/ESRGAN-SROT-M1234-v2-4x/Local_LPIPS_min_dn
+    dataroot_T_OOS_map: ../../dataset/Local_LPIPS_min_dn
 
     use_shuffle: true
     n_workers: 4  # per GPU
@@ -52,8 +51,6 @@ network_D:
 path:
   pretrain_model_G: ../pretrained/ESRGAN-SROT-M1234-v2-4x.pth
   pretrain_model_C: ~
-#  resume_state: ../experiments/DFT/training_state/35000.state
-#  resume_state_C: ../experiments/DFT/models/35000_C.pth
 #  strict_load_C: true
 #  resume_state_C: ~
 
