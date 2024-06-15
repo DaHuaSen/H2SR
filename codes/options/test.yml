@@ -1,4 +1,4 @@
-name: OOE
+name: H2SR
 suffix: ~  # add suffix to saved images
 model: srgan
 distortion: sr
